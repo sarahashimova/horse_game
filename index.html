@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="main-section">
+        <div class="horses">
+          <div class="horse-1">
+            <img class="first" src="images/horse1.png" alt="gif" />
+          </div>
+          <div class="horse-2">
+            <img class="second" src="images/horse2.png" alt="gif" />
+          </div>
+          <div class="horse-3">
+            <img class="third" src="images/horse3.png" alt="gif" />
+          </div>
+          <button class="start" onclick="playAudio()">Start</button>
+          <button class="reset">Reset</button>
+          <button type="button" id="deposite-btn">deposite</button>
+          <form>
+            <label class="horse-select" for="horse-select">Select your horse:</label>
+            <select id="horse-select">
+              <option value="horse-1">Horse 1</option>
+              <option value="horse-2">Horse 2</option>
+              <option value="horse-3">Horse 3</option>
+            </select>
+            <br />
+            <label class="bet" for="bet-amount">Enter your bet amount:</label>
+            <input type="number" id="bet-amount"  />
+            <br />
+           
+          </form>
+          <div class="total">Total amount won: <span id="total-winnings">0</span></div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </section>
+
+    <audio id="myAudio" controls>
+      <source
+        src="./audio/mixkit-horse-fast-gallop-on-a-concrete-surface-83.wav"
+        type="audio/ogg"
+      /></audio
+    ><br />
+
+    <script src="script.js"></script>
+  </body>
+</html>
